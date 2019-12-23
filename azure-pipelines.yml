@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: apt-get install libreadline6 libreadline6-dev
+- script: sudo apt-get install libreadline6 libreadline6-dev
   displayName: 'Install libreadline6'
   
 - task: UsePythonVersion@0
