@@ -14,7 +14,8 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+    pip install --upgrade pip
     pip install hererocks
-    hererocks lua_install -r^ "lua=5.3"
+    hererocks lua_install -l5.3 -rlatest  
     export PATH=$PATH:$PWD/lua_install/bin
   displayName: 'Run a multi-line script'
