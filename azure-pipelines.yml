@@ -28,5 +28,5 @@ steps:
     sudo luarocks install busted
   displayName: 'Install dependencies'
   
-- script: |
+- script: busted --verbose
   displayName: 'Run tests'
