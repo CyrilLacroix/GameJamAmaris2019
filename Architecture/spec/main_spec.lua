@@ -1,7 +1,6 @@
-
--- local love = {
---     main = require 'main'
--- }
+ local love = {
+     main = require 'main'
+}
 
 describe('main', function()
   it('builds', function()
