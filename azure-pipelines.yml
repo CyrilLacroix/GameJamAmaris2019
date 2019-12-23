@@ -13,6 +13,9 @@ steps:
 - script: sudo apt-get install libreadline6 libreadline6-dev
   displayName: 'Install libreadline6'
   
+  - script: sudo apt-get install luarocks
+  displayName: 'Install luarocks'
+  
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '2.7'
