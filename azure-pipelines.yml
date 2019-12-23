@@ -28,5 +28,5 @@ steps:
     sudo luarocks install busted
   displayName: 'Install dependencies'
   
-- script: busted --verbose
+- script: busted --verbose --directory=Architecture
   displayName: 'Run tests'
