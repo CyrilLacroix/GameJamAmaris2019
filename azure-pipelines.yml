@@ -41,14 +41,11 @@ steps:
     rm $HOME/.sonar/sonar-scanner.zip
     export PATH=$SONAR_SCANNER_HOME/bin:$PATH
     export SONAR_SCANNER_OPTS="-server"
-  displayName: 'Install SonarCloud'
-
-- script: |
     sonar-scanner \
       -Dsonar.projectKey=CyrilLacroix_GameJamAmaris2019 \
       -Dsonar.organization=cyrillacroix \
       -Dsonar.sources=. \
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.login=ae4b0839f56bc14879fc31805ad518eb6bf32522
-  displayName: 'Scan'
+  displayName: 'Install and run SonarCloud'
 
