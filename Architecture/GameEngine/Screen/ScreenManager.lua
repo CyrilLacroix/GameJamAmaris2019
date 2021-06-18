@@ -24,9 +24,15 @@ end
 
 -- Actions
 function ScreenManager:goToHomeScreen (dt)
-    self.currentScreen = HomeScreen:new()
+    if self.currentScreen.title ~=  "Home Screen" then
+        self.currentScreen = HomeScreen:new()
+        self.currentScreen:load()
+    end
 end
 
 function ScreenManager:goToGameScreen (dt)
-    self.currentScreen = GameScreen:new()
+    if self.currentScreen.title ~=  "Game Screen" then
+        self.currentScreen = GameScreen:new()
+        self.currentScreen:load()
+    end
 end

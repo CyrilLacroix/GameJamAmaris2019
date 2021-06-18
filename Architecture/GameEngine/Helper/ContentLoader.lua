@@ -1,4 +1,4 @@
 ContentLoader = {
-    GrassTexture = love.graphics.newImage("Content/Grass.jpg")
+    CloudTexture = love.graphics.newImage("Content/Cloud.png")
 
 }
